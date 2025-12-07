@@ -2,7 +2,7 @@ import random
 
 def load_question_bank(path):
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r") as f:
             lines = [line.rstrip("\n") for line in f]
     except Exception as e:
         print("Error opening file:", e)
